@@ -1,0 +1,33 @@
+/*
+Main Css File
+Author - Tolu Adesina
+Project - GaraHub
+*/
+
+@import './variables.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Defaults */
+.gh-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header .top-header {
+  background-color: var(--light-grey);
+}
+
+.header .main-header {
+  background-color: #ffffff;
+}
