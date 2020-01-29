@@ -36,4 +36,5 @@ body {
 .header .main-header {
   background-color: #ffffff;
   border-bottom: 1px solid var(--medium-grey);
+  padding: 1rem;
 }
