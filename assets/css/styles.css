@@ -30,6 +30,7 @@ body {
 
 .header .top-header {
   background-color: var(--light-grey);
+  padding: .5rem 0;
 }
 
 .header .main-header {
