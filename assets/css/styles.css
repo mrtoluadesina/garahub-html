@@ -92,8 +92,8 @@ body {
 
 .header .nav-drawer .close-menu {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   top: 1rem;
   right: 1rem;
 }
