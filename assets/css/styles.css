@@ -107,8 +107,8 @@ body {
   position: absolute;
   width: 15px;
   height: 15px;
-  top: 1rem;
-  right: 1rem;
+  top: 1.1rem;
+  left: 1rem;
 }
 
 .header .nav-drawer .close-menu::before,
@@ -128,6 +128,11 @@ body {
 
 .header .nav-drawer .close-menu::after {
   transform: rotate(-45deg)
+}
+
+/* Temporary styling */
+.header .nav-drawer p {
+  margin-left: 20px;
 }
 
 /* main Section - Banner */
