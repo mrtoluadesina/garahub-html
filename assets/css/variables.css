@@ -1,0 +1,15 @@
+:root {
+  --light-grey: #fafafa;
+  --medium-grey: #eaeaea;
+  --white: #ffffff;
+  --black: #111111;
+
+  --default-font-size: 16px;
+
+  --mobile-breakpoint: 414px;
+  --mobile-b-breakpoint: 415px;
+  --tablet-breakpoint: 768px;
+  --tablet-b-breakpoint: 769px;
+  --desktop-breakpoint: 1028px;
+  --desktop-b-breakpoint: 1029px;
+}
