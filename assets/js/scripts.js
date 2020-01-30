@@ -7,6 +7,7 @@
   const drawer = document.querySelector(".nav-drawer");
   const close = document .querySelector(".close-menu");
 
+  // Open and close the drawer
   nav.addEventListener('click', () => {
     drawer.classList.add('isActive');
   });
@@ -14,7 +15,6 @@
     drawer.classList.remove('isActive');
   });
 
-  // nav.click = () => drawer.classList.add('isActive');
+  // Next function
 
-  // close.click = () => drawer.classList.remove('isActive');
 })();
