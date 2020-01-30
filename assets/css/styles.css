@@ -80,7 +80,6 @@ body {
   height: calc(100vh - 51px);
   background-color: var(--white);
   position: absolute;
-  /* left: -100%; */
   transform: translate3d(-100%, 0, 0);
   transition: transform 0.5s ease;
   padding: 1rem;
@@ -88,8 +87,6 @@ body {
 }
 
 .header .nav-drawer.isActive {
-  /* left: 0;
-  transition: left 500ms; */
   transform: translateZ(0);
 }
 
