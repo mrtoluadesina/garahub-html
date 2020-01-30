@@ -144,13 +144,14 @@ body {
 .main-section .service-section {
   display: flex;
   flex-direction: column;
-  margin: 1rem 0;
+  margin: .5rem 0;
 }
 
 .main-section .service-section .service-item {
   display: flex;
   background-color: antiquewhite;
   padding: 0.5rem;
+  margin: .5rem 0
 }
 
 .main-section .service-section .service-item .service-item-title {
