@@ -5,21 +5,16 @@
 
   const nav = document.querySelector(".mobile-menu");
   const drawer = document.querySelector(".nav-drawer");
-  let isClicked = false;
-  if (!isClicked) {
-    nav.onclick = function() {
-      console.log("I am opening");
-      isClicked = true;
-      nav.classList.add("isClose");
-      drawer.classList.add("isActive");
-    };
-  }
+  const close = document .querySelector(".close-menu");
 
-  if (isClicked) {
-    const close = document.querySelector(".isClose");
-    close.onclick = function() {
-      console.log("I am closing");
-      drawer.classList.remove("isActive");
-    };
-  }
+  nav.addEventListener('click', () => {
+    drawer.classList.add('isActive');
+  });
+  close.addEventListener('click', () => {
+    drawer.classList.remove('isActive');
+  });
+
+  // nav.click = () => drawer.classList.add('isActive');
+
+  // close.click = () => drawer.classList.remove('isActive');
 })();
