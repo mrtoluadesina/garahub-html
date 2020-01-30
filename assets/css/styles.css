@@ -45,7 +45,7 @@ body {
 .header .main-header .mobile-menu {
   display: flex;
   position: relative;
-  width: 18px;
+  width: 15px;
   height: 12px;
   margin-right: .5rem;
   cursor: pointer;
