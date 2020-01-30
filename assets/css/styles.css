@@ -13,6 +13,7 @@ Project - GaraHub
 }
 
 body {
+  font-family: var(--default-font-family);
   font-size: var(--default-font-size);
 }
 
@@ -20,6 +21,17 @@ body {
 .gh-flex {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.gh-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  width: 100%;
   align-items: center;
 }
 
@@ -39,6 +51,7 @@ body {
   border-bottom: 1px solid var(--medium-grey);
   padding: 1rem;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -73,7 +86,7 @@ body {
   bottom: 0;
 }
 
-.header .nav-header {}
+/* .header .nav-header {} */
 
 .header .nav-drawer {
   width: 100%;
@@ -112,12 +125,134 @@ body {
 .header .nav-drawer .close-menu::before {
   transform: rotate(45deg)
 }
+
 .header .nav-drawer .close-menu::after {
   transform: rotate(-45deg)
 }
 
+/* main Section - Banner */
+.main-section {
+  padding: 0.8rem;
+}
+
+.main-section .banner {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section .banner .banner-section {
+  width: 100%;
+  height: 10.5rem;
+  border-radius: .25rem;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+}
+
+.main-section .banner .banner-section .banner-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-section .service-section {
+  display: flex;
+  margin: .5rem 0;
+}
+
+.main-section .service-section .container {
+  flex-direction: column;
+}
+
+.main-section .service-section .service-item {
+  display: flex;
+  background-image: linear-gradient(to right, var(--gh-aqua), var(--gh-pink));
+  background-color: antiquewhite;
+  padding: 0.5rem;
+  margin: .25rem 0
+}
+
+.main-section .service-section .service-item .service-item-title {
+  display: flex;
+  flex: 0 0 30%;
+  align-items: center;
+  padding: 0 1rem;
+  border-right: 1px solid var(--medium-grey);
+}
+
+.main-section .service-section .service-item .service-item-title h3 {
+  word-wrap: break-word;
+  text-align: right;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.main-section .service-section .service-item .service-item-content {
+  flex: 0 0 70%;
+  padding: 0 1rem;
+}
+
+.main-section .service-section .service-item .service-item-content p {
+  font-size: 10px;
+}
+
+.main-section .service-section .service-item .service-item-content p span {
+  font-weight: 600;
+  display: flex;
+  font-size: 11px;
+}
+
 @media screen and (min-width: 768px) {
+  .header .top-header {
+    display: flex;
+    font-size: 10px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1180px;
+  }
+
   .header .main-header .mobile-menu {
     display: none;
+  }
+
+  .main-section .banner {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main-section .service-section {
+    justify-content: center;
+  }
+
+  .main-section .service-section .container {
+    flex-direction: row;
+  }
+
+  .main-section .service-section .service-item {
+    max-width: 270px;
+  }
+
+  .main-section .service-section .service-item .service-item-title h3 {
+    font-size: 12px;
+  }
+
+  .main-section .service-section .service-item .service-item-content p {
+    font-size: 8px;
+  }
+
+  .main-section .service-section .service-item .service-item-content p span {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .main-section .service-section .service-item {
+    width: 100%;
+    max-width: 350px;
   }
 }
