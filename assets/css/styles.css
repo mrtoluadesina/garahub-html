@@ -149,9 +149,10 @@ body {
 
 .main-section .service-section .service-item {
   display: flex;
+  background-image: linear-gradient(to right, var(--gh-aqua), var(--gh-pink));
   background-color: antiquewhite;
   padding: 0.5rem;
-  margin: .5rem 0
+  margin: .25rem 0
 }
 
 .main-section .service-section .service-item .service-item-title {
@@ -159,7 +160,7 @@ body {
   flex: 0 0 30%;
   align-items: center;
   padding: 0 1rem;
-  border-right: 1px solid;
+  border-right: 1px solid var(--medium-grey);
 }
 
 .main-section .service-section .service-item .service-item-title h3 {
@@ -170,6 +171,7 @@ body {
 }
 
 .main-section .service-section .service-item .service-item-content {
+  flex: 0 0 70%;
   padding: 0 1rem;
 }
 
