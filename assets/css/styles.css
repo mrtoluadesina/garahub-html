@@ -80,22 +80,23 @@ body {
   height: calc(100vh - 51px);
   background-color: var(--white);
   position: absolute;
-  left: -100%;
-  border: 1px solid var(--black);
-  transition: left 2ms;
+  /* left: -100%; */
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.5s ease;
   padding: 1rem;
   z-index: 4;
 }
 
 .header .nav-drawer.isActive {
-  left: 0;
-  transition: left 2ms;
+  /* left: 0;
+  transition: left 500ms; */
+  transform: translateZ(0);
 }
 
 .header .nav-drawer .close-menu {
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   top: 1rem;
   right: 1rem;
 }
