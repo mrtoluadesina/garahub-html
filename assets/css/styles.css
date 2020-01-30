@@ -173,7 +173,8 @@ body {
   background-image: linear-gradient(to right, var(--gh-aqua), var(--gh-pink));
   background-color: antiquewhite;
   padding: 0.5rem;
-  margin: .25rem 0
+  margin: .25rem 0;
+  width: 100%;
 }
 
 .main-section .service-section .service-item .service-item-title {
