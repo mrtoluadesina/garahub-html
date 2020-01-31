@@ -42,7 +42,7 @@ body {
   padding: 1rem;
   background-color: var(--white);
   border-radius: 3px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
 }
 
 .header {
@@ -225,6 +225,10 @@ body {
   margin: 0.5rem 0;
 }
 
+.main-section .card-section .container {
+  flex-direction: column;
+}
+
 .main-section .card-section .card-title {
   display: flex;
   justify-content: space-between;
@@ -250,6 +254,36 @@ body {
   width: 100%;
   padding: 0.5rem;
   overflow-x: scroll;
+}
+
+.main-section .card-section .card-body .card {
+  flex: 0 0 47.5%
+}
+
+.main-section .card-section .card-body .product-img {
+  width: 100%;
+}
+
+.main-section .card-section .card-body .product-img img {
+  width: 100%;
+}
+
+.main-section .card-section .card-body .product-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-section .card-section .card-body .product-details .sku {
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+.main-section .card-section .card-body .product-details .product-name {
+  font-size: 14px;
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 415px) {
