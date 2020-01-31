@@ -15,6 +15,7 @@ Project - GaraHub
 body {
   font-family: var(--default-font-family);
   font-size: var(--default-font-size);
+  background-color: var(--gh-bg);
 }
 
 /* Defaults */
@@ -49,7 +50,7 @@ body {
 .header .main-header {
   background-color: #ffffff;
   border-bottom: 1px solid var(--medium-grey);
-  padding: 1rem;
+  padding: 0.65rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,7 +80,7 @@ body {
 }
 
 .header .main-header .mobile-menu .hamburger:nth-child(2) {
-  top: 45%;
+  top: 42.5%;
 }
 
 .header .main-header .mobile-menu .hamburger:last-of-type {
@@ -151,7 +152,7 @@ body {
   border-radius: 0.25rem;
   overflow: hidden;
   display: flex;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 .main-section .banner .banner-section .banner-image {
@@ -204,6 +205,30 @@ body {
   font-weight: 600;
   display: flex;
   font-size: 11px;
+}
+
+/* Card Section */
+.main-section .card-section {
+  background-color: var(--white);
+  border-radius: 0.25rem;
+  min-height: 100px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Card Shadow */
+  margin: 0.5rem 0;
+}
+
+.main-section .card-section .card-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--medium-grey);
+}
+
+.main-section .card-section .card-body {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  overflow-x: scroll;
 }
 
 @media screen and (min-width: 415px) {
