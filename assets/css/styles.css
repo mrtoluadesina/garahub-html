@@ -219,9 +219,21 @@ body {
 .main-section .card-section .card-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 0.5rem;
   border-bottom: 1px solid var(--medium-grey);
+}
+
+.main-section .card-section .card-title .title {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.020rem;
+}
+
+.main-section .card-section .card-title .card-btn-link {
+  color: var(--gh-red);
+  font-size: 9px;
 }
 
 .main-section .card-section .card-body {
