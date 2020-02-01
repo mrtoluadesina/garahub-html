@@ -217,6 +217,16 @@ body {
 }
 
 /* Card Section */
+
+/* dry */
+
+.card-btn-link {
+  color: var(--gh-red);
+  font-size: 9px;
+  text-decoration: underline;
+}
+
+/* /dry */
 .main-section .card-section {
   background-color: var(--white);
   border-radius: 0.25rem;
@@ -242,11 +252,6 @@ body {
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 0.020rem;
-}
-
-.main-section .card-section .card-title .card-btn-link {
-  color: var(--gh-red);
-  font-size: 9px;
 }
 
 .main-section .card-section .card-body {
@@ -333,6 +338,18 @@ body {
 .main-section .card-section .card-body .product-details .product-qty .product-rem {
   font-size: 12px;
   opacity: 0.65;
+}
+
+.main-section .card-section .card-body .buy-cta {
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  margin: 0.5rem -1rem -1rem;
+  background-color: var(--gh-light-pink);
+}
+
+.main-section .card-section .card-body .buy-cta .card-btn-link {
+  font-size: 13px;
 }
 
 @media screen and (min-width: 415px) {
