@@ -264,8 +264,16 @@ body {
 
 .main-section .card-section .card-body .card {
   flex: 0 0 47.5%;
-  margin: 0 0.5rem 0.25rem 0;
+  margin: 0 0.5rem 0.25rem;
   max-width: 190px;
+}
+
+.main-section .card-section .card-body .card:first-child {
+  margin: 0 0.5rem 0.25rem 0;
+}
+
+.main-section .card-section .card-body .card:last-child {
+  margin: 0 0 0.25rem 0.5rem;
 }
 
 .main-section .card-section .card-body .product-img {
