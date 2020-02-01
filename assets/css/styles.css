@@ -280,10 +280,34 @@ body {
 
 .main-section .card-section .card-body .product-details .product-name {
   font-size: 14px;
+  line-height: 1.4;
   height: 40px;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 10px;
+}
+
+.main-section .card-section .card-body .product-details .product-price {
+  display: flex;
+  overflow: scroll;
+}
+
+.main-section .card-section .card-body .product-details .product-price .price {
+  font-size: 14px;
+}
+
+.main-section .card-section .card-body .product-details .product-price .price:first-of-type {
+  padding-right: 0.5rem;
+}
+
+.main-section .card-section .card-body .product-details .product-price .price:last-of-type {
+  padding-left: 0.5rem;
+}
+
+.main-section .card-section .card-body .product-details .product-price .price span {
+  display: flex;
+  font-size: 65%;
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 415px) {
