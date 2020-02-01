@@ -224,6 +224,7 @@ body {
   color: var(--gh-red);
   font-size: 9px;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /* /dry */
@@ -264,6 +265,7 @@ body {
 .main-section .card-section .card-body .card {
   flex: 0 0 47.5%;
   margin: 0 0.5rem 0.25rem 0;
+  max-width: 190px;
 }
 
 .main-section .card-section .card-body .product-img {
@@ -406,7 +408,27 @@ body {
 }
 
 .main-section .card-section .card-body .buy-cta .add-to-cart .select-quantity {
+  display: flex;
   flex: 0 0 55%;
+  width: 100%;
+  height: 100%;
+}
+
+.main-section .card-section .card-body .buy-cta .add-to-cart .select-quantity button,
+.main-section .card-section .card-body .buy-cta .add-to-cart .select-quantity input {
+  flex: 0 0 33.3%;
+  max-width: 47.5px;
+  border: 0;
+}
+
+.main-section .card-section .card-body .buy-cta .add-to-cart .select-quantity input {
+  background-color: transparent;
+  text-align: center;
+  max-width: 40px;
+}
+
+.main-section .card-section .card-body .buy-cta .add-to-cart .select-quantity button {
+  background-color: var(--gh-dark-pink);
 }
 
 .main-section .card-section .card-body .buy-cta .add-to-cart .card-btn-link {
@@ -479,6 +501,15 @@ body {
 
   .main-section .service-section .service-item .service-item-content span {
     display: none;
+  }
+
+  .main-section .card-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-section .card-section .card-body .card {
+    max-width: 240px;
   }
 }
 
