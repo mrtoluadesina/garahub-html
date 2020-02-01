@@ -251,7 +251,7 @@ body {
 .main-section .card-section .card-title .title {
   font-size: 12px;
   font-weight: 800;
-  letter-spacing: 0.020rem;
+  letter-spacing: 0.02rem;
 }
 
 .main-section .card-section .card-body {
@@ -303,15 +303,31 @@ body {
   font-size: 14px;
 }
 
-.main-section .card-section .card-body .product-details .product-price .price:first-of-type {
+.main-section
+  .card-section
+  .card-body
+  .product-details
+  .product-price
+  .price:first-of-type {
   padding-right: 0.5rem;
 }
 
-.main-section .card-section .card-body .product-details .product-price .price:last-of-type {
+.main-section
+  .card-section
+  .card-body
+  .product-details
+  .product-price
+  .price:last-of-type {
   padding-left: 0.5rem;
 }
 
-.main-section .card-section .card-body .product-details .product-price .price span {
+.main-section
+  .card-section
+  .card-body
+  .product-details
+  .product-price
+  .price
+  span {
   display: flex;
   font-size: 65%;
   opacity: 0.5;
@@ -324,7 +340,12 @@ body {
   padding: 0.5rem 0;
 }
 
-.main-section .card-section .card-body .product-details .product-qty .progress-bar {
+.main-section
+  .card-section
+  .card-body
+  .product-details
+  .product-qty
+  .progress-bar {
   height: 5px;
   border-radius: 5px;
   overflow: hidden;
@@ -335,7 +356,12 @@ body {
   background-color: seagreen;
 }
 
-.main-section .card-section .card-body .product-details .product-qty .product-rem {
+.main-section
+  .card-section
+  .card-body
+  .product-details
+  .product-qty
+  .product-rem {
   font-size: 12px;
   opacity: 0.65;
 }
@@ -343,13 +369,48 @@ body {
 .main-section .card-section .card-body .buy-cta {
   display: flex;
   justify-content: center;
+  position: relative;
   padding: 0.5rem;
   margin: 0.5rem -1rem -1rem;
   background-color: var(--gh-light-pink);
+  overflow: hidden;
 }
 
 .main-section .card-section .card-body .buy-cta .card-btn-link {
   font-size: 13px;
+  width: 100%;
+  text-align: center;
+  transform: translateZ(0);
+  transition: transform 0.5s ease;
+}
+
+.main-section .card-section .card-body .buy-cta .card-btn-link.isClicked {
+  transform: translate3d(100%, 0, 0);
+  transition: transform 0.5s ease;
+}
+
+.main-section .card-section .card-body .buy-cta .add-to-cart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.5s ease;
+}
+
+.main-section .card-section .card-body .buy-cta .add-to-cart.isActive {
+  transform: translateZ(0);
+}
+
+.main-section .card-section .card-body .buy-cta .add-to-cart .select-quantity {
+  flex: 0 0 55%;
+}
+
+.main-section .card-section .card-body .buy-cta .add-to-cart .card-btn-link {
+  flex: 0 0 45%;
 }
 
 @media screen and (min-width: 415px) {
