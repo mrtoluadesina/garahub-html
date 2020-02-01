@@ -514,6 +514,11 @@ body {
   .main-section .card-section {
     display: flex;
     justify-content: center;
+    background-color: transparent;
+  }
+
+  .main-section .card-section .card-body {
+    padding: 1rem 0.05rem;
   }
 
   .main-section .card-section .card-body .card {
