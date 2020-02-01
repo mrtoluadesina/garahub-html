@@ -363,6 +363,7 @@ body {
 }
 
 .main-section .card-section .card-body .product-details .product-qty .progress {
+  display: flex;
   background-color: seagreen;
 }
 
