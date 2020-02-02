@@ -248,6 +248,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   width: 100%;
   padding: 0.5rem;
   border-bottom: 1px solid var(--medium-grey);
@@ -501,6 +502,10 @@ button {
     padding: 1.5rem;
   }
 
+  .card-btn-link {
+    font-size: 16px;
+  }
+
   .header .main-header .mobile-menu {
     display: none;
   }
@@ -550,12 +555,32 @@ button {
     background-color: transparent;
   }
 
+  .main-section .card-section .card-title {
+    padding: 1rem;
+    border: 0;
+  }
+
+  .main-section .card-section .card-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border: 1px solid var(--dark-grey);
+    opacity: 0.8;
+    width: 70%;
+    left: 20%;
+  }
+
+  .main-section .card-section .card-title .title {
+    font-size: 30px;
+  }
+
   .main-section .card-section .card-body {
     padding: 1rem 0.05rem;
+    justify-content: space-between;
   }
 
   .main-section .card-section .card-body .card {
-    max-width: 240px;
+    max-width: 216px;
   }
 
   .main-section .card-section .card-body .buy-cta {
