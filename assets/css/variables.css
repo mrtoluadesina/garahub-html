@@ -1,12 +1,17 @@
 :root {
   --light-grey: #fafafa;
   --medium-grey: #eaeaea;
+  --dark-grey: #ccc;
   --white: #ffffff;
   --black: #111111;
   --gh-aqua: #eef9fc;
   --gh-pink: #faeaf1;
+  --gh-light-pink: #FDF5F5;
+  --gh-dark-pink: #F7DFDF;
+  --gh-bg: #F9F9FC;
+  --gh-red: #F71735;
 
-  --default-font-family: 'Open Sans', sans-serif;
+  --default-font-family: sans-serif;
   --default-font-size: 16px;
 
   --mobile-breakpoint: 414px;
