@@ -660,6 +660,7 @@ button {
     display: flex;
     justify-content: center;
     background-color: transparent;
+    box-shadow: none;
   }
 
   .main-section .card-section .card-title {
